@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+public class Main{
+    public static class phone{
+        String companyName;
+        String model;
+        String color;
+        int ram;
+        int storage;
+        int batteryPower;
+        
+        public String getInfo(){
+            StringBuilder sb = new StringBuilder();
+            sb.append("Company Name:"+this.companyName+"\n");
+            sb.append("Model:"+this.model+"\n");
+            sb.append("Color:"+this.color+"\n");
+            sb.append("ram:"+this.nam+"GB\n");
+            sb.append("Storage:"+this.storage+"GB\n");
+            sb.append("Battery Power:"+this.batteryPower+"mAH\n");
+
+            return sb.toString();
+        }
+    }
+    public static void test(){
+        phone p1 = new phone();
+        p1.companyName = "One Plus";
+        p1.model = "9R 5G";
+        p1.color = "Lake Blue";
+        p1.ram = 8;
+    }
+}
